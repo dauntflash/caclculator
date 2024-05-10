@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="box">
+    <input type="text" id="input" readonly placeholder="0">
+    <div class="main">
+        <div class="section">
+            <button id="delete" onclick="remove()">DE</button>
+            <button id="clear" onclick="clearScreen()">AC</button>
+            <button id="double" onclick="output('00')">00</button>
+            <button id="equals" onclick="equals()">=</button>
+            </div>
+        <div class="section">
+            <button onclick="output('1')">1</button>
+            <button onclick="output('2')">2</button>
+            <button onclick="output('3')">3</button>
+            <button onclick="output('+')">+</button>  
+        </div>
+        <div class="section">
+            <button onclick="output('4')">4</button>
+            <button onclick="output('5')">5</button>
+            <button onclick="output('6')">6</button>
+            <button id="minus" onclick="output('-')">-</button>
+        
+        </div>
+        <div class="section">
+            <button onclick="output('7')">7</button>
+            <button onclick="output('8')">8</button>
+            <button onclick="output('9')">9</button>
+            <button onclick="output('&divide;')">/</button>
+        </div>
+        <div class="section">
+            <button onclick="output('0')">0</button>
+            <button onclick="output('00')">00</button>
+            <button onclick="output('.')">.</button>
+            <button onclick="output('&times;')">*</button>
+        </div> 
+    </div>    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

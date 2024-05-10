@@ -1,0 +1,37 @@
+.box{
+    width: fit-content;
+    margin: 0 auto;
+    background-color: rgb(3, 54, 94);
+    border-radius: 7px;
+}
+.box input{
+    height: 5rem;
+    width: 22rem;
+    margin: 2rem 1rem 2rem 1rem;
+    outline: none;
+    border: none;
+    font-size: 40px;
+    cursor:default;
+}
+.main{
+    margin: 5px;
+    padding-bottom: 5px;
+}
+.section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section button{
+    width: 6rem;
+    height: 5rem;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: rgba(3, 54, 94,0.7);
+    cursor: pointer;
+}
+#minus{
+    vertical-align: middle;
+}
