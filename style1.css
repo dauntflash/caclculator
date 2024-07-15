@@ -1,6 +1,22 @@
+:root{
+    --bodybgdark: rgba(20, 1, 17, 1);
+    --boxbg:#fef2f2;
+    --bgdark:#333;
+    --bglight:#fff;
+}
+
 body{
-    background: rgba(20, 1, 17, 1);
+    background: var(--bglight);
     overflow: hidden;
+    transition: .5s ease;
+}
+
+body.dark{
+    background: var(--bodybgdark);
+    overflow: hidden;
+    --boxbg: #000;
+    --bgdark: #fff;
+    --bglight: #333;
 }
 .icons{
     direction: rtl;
@@ -21,7 +37,7 @@ body{
 .box{
     width: fit-content;
     margin: 5vh auto;
-    background-color: #000;
+    background-color: var(--boxbg);
     border-radius: 7px;
     padding: 20px;
     box-shadow: 22px;
@@ -34,15 +50,15 @@ body{
     font-size: 50px;
     cursor:default;
     text-align: right;
-    background: #333;
-    color: white;
+    color: var(--bgdark);
+    background:var(--bglight);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight:lighter;
     border-radius: 20px;
     text-overflow: ellipsis;
 }
 .box input::placeholder{
-    color: white;
+    color: var(--bgdark);
 }
 .main{
     margin: 3px;
@@ -60,11 +76,11 @@ body{
     text-align: center;
     align-items: center;
     justify-content: space-around;
-    color: white;
     width: 4rem;
     height: 4rem;
     font-size: 25px;
-    background-color: #333;
+    color: var(--bgdark);
+    background-color: var(--bglight);
     cursor: pointer;
     outline: none;
     border: none;

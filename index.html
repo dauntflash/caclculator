@@ -3,19 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
     <title>Calculator</title>
 </head>
 <body>
+    <div class="icons">
+        <img id="github" src="assets/github dark.svg" alt="github">
+        <div class="theme">
+            <img id="light-mode" onclick="lightFunction()" src="assets/light_mode_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="light mode">
+            <img id="dark-mode" onclick="darkFunction()" src="assets/dark_mode_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="dark mode">
+        </div>
+    </div>
     <div class="box">
     <input type="text" id="input" readonly placeholder="0">
     <div class="main">
         <div class="section">
-            <button id="delete" onclick="remove()">DE</button>
+            <button id="Ans" onclick="output(Ans)">Ans</button>
             <button id="clear" onclick="clearScreen()">AC</button>
             <button id="double" onclick="output('00')">00</button>
-            <button id="equals" onclick="equals()">=</button>
+            <button onclick="output('&times;')">&times;</button>
             </div>
+        
+        <div class="section">
+            <button onclick="output('7')">7</button>
+            <button onclick="output('8')">8</button>
+            <button onclick="output('9')">9</button>
+            <button onclick="output('&divide;')">&divide;</button>
+        </div>
+        <div class="section">
+            <button onclick="output('4')">4</button>
+            <button onclick="output('5')">5</button>
+            <button onclick="output('6')">6</button>
+            <button id="minus" onclick="output('-')">-</button>
+        </div>
         <div class="section">
             <button onclick="output('1')">1</button>
             <button onclick="output('2')">2</button>
@@ -23,23 +43,10 @@
             <button onclick="output('+')">+</button>  
         </div>
         <div class="section">
-            <button onclick="output('4')">4</button>
-            <button onclick="output('5')">5</button>
-            <button onclick="output('6')">6</button>
-            <button id="minus" onclick="output('-')">-</button>
-        
-        </div>
-        <div class="section">
-            <button onclick="output('7')">7</button>
-            <button onclick="output('8')">8</button>
-            <button onclick="output('9')">9</button>
-            <button onclick="output('&divide;')">/</button>
-        </div>
-        <div class="section">
-            <button onclick="output('0')">0</button>
-            <button onclick="output('00')">00</button>
             <button onclick="output('.')">.</button>
-            <button onclick="output('&times;')">*</button>
+            <button onclick="output('0')">0</button>
+            <button id="delete" onclick="remove()"><img id="backspace-img" src="assets/iconmonstr-backspace-filled dark.svg" alt=""></button>
+            <button id="equals" onclick="equals()">=</button>
         </div> 
     </div>    
     </div>
